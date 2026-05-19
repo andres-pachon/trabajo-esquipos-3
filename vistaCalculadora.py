@@ -5,6 +5,10 @@ def InciarApp ():
     opcion = int(input("Digite la opcion a calcular  1. Calcular IMC 2. Calcular TMB 3. Calculo de calorias en reposo 4. calcculo de calorias a adelgazar 5. porcentaje de grasa"))     
     if opcion==1:
         print ("ejecutar calculadora de IMC", cal.calcularIMC)
+        peso = float(input("Digite su peso en KG: "))
+        altura = float(input("Digite su altura en Metros: "))
+        resultado = cal.CalcularIMC(peso, altura)
+        print(f"Su IMC es de: {resultado}")
     elif opcion == 2:
         peso = float(input("Ingrese su peso en kg: "))
         altura = float(input("Ingrese su altura en cm: "))

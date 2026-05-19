@@ -5,3 +5,7 @@ def calcular_tmb(peso:float, altura:float, edad:int, valor_genero:float) -> floa
 
     tmb=(10 * peso) + (6.25 * altura) - (5 * edad) + valor_genero
     return tmb
+
+def CalcularIMC (peso:float, altura:float):
+    IMC = peso /(altura*2)
+    return round (IMC,2)
