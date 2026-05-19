@@ -17,8 +17,11 @@ def InciarApp ():
         resultado_tmb = cal.calcular_tmb(peso, altura, edad, valor_genero)
         print("Su TMB es:", resultado_tmb)
     elif opcion==3:
-        #aqui va a llamar
-        print()
+        peso = int(input("Ingrese su peso en kg: "))
+        altura = float(input("Ingrese su altura en cm: "))
+        edad = int(input("Ingrese su edad en años: "))
+        resultado_calorias_reposo = cal.Calculo_de_calorias_en_reposo(peso, altura, edad)
+        print("Su calorias en reposo es:", resultado_calorias_reposo)
     elif opcion==4:
         #aqui va a llamar
         print()

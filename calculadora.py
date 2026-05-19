@@ -9,3 +9,8 @@ def calcular_tmb(peso:float, altura:float, edad:int, valor_genero:float) -> floa
 def CalcularIMC (peso:float, altura:float):
     IMC = peso /(altura*2)
     return round (IMC,2)
+
+
+def Calculo_de_calorias_en_reposo (peso: int, altura:float , edad:int):
+    calorias_en_reposo = (10 * peso) + (6.25 * altura) - (5 * edad) + 5
+    return calorias_en_reposo
